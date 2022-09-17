@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Tour</title>
+
+    <link rel="stylesheet" href="/styles.css"/>    
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <script defer src="/addTour.js" ></script>
+
+
+  </head>
+  <body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+          <span>
+          <a id="navbar__logo">Concrete Jungle Tours</a>
+  
+          <div class="subnav__content">
+           
+            <a href="/index.html#pois"  class="subnav__content">Stops</a>
+            <a href="/index.html#guides" class="subnav__content">Guides</a>
+          </div>
+        </span>
+       
+  
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            
+            <li class="navbar__btn">
+              <a class="navbar__links" id="logout">Logout</a>
+  
+            </li>
+            <li class="navbar__item">
+              <a href="/index.html" class="navbar__links" id="home">Home</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="mytours.html" class="navbar__links" id="tours">My Tours</a>
+  
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+  
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+          <h1 class="hero__heading" style="margin-bottom: 100px; margin-top: 0px;">Add <span> Tour</span></h1>
+          <tbody>
+            <div id="login-error-message" style= "margin-bottom: 20px" class="label"></div>
+            <div>
+              <ul>
+                
+                <div class="control" style="margin-bottom: 30px" > 
+                  
+                <label class="label" for="days" style="margin-right: 190px;">Pick a Day:</label>
+
+                <select style="width: 300px;" name="days" id="days">
+                  <option value="1">Monday</option>
+                  <option value="2">Tuesday</option>
+                  <option value="3">Wednesday</option>
+                  <option value="4">Thursday</option>
+                  <option value="5">Friday</option>
+                  <option value="6">Saturday</option>
+                  <option value="7">Sunday</option>
+                </select> 
+                  
+                </div>
+              </ul>
+            </div>
+            <ul>
+                
+                <div class="label" style="margin-bottom: 30px" > 
+                  
+                <label for="days" style="margin-right: 150px; ">Pick some stops:</label>
+
+                <select style="width: 305px; " name="stops" id="stops" multiple multiselect-search="true">
+                  <option value="1">Statue of Liberty</option>
+                  <option value="2">Central Park</option>
+                  <option value="3">Rockefeller Center</option>
+                  <option value="4">The Met</option>
+                  <option value="5">Broadway</option>
+                  <option value="6">The Empire State Building</option>
+                  <option value="7">9/11 Memoria</option>
+                  <option value="8">The High Line</option>
+                  <option value="9">The Museum of Natural History</option>
+                  <option value="10">Times Square</option>
+                  <option value="11">The Brooklyn Bridge</option>
+                  <option value="12">Fifth Avenue</option>
+                  
+                </select> 
+                  
+                </div>
+              </ul>
+            <ul class="label" style= "margin-bottom: 20px; ">Amount:   <span style="margin-left: 40px"><input class="input" type="text" style="margin-left: 175px; width: 300px" placeholder="$00.00" id="price"></span></ul>
+            <ul class="label" style= "margin-bottom: 20px; ">Title:   <span style="margin-left: 40px"><input class="input" type="text" style="margin-left: 200px; width: 300px" placeholder="Title" id="title"></span></ul>
+
+          </tbody>
+          <button id="addButton" class="button" style="height: 40px;width: 250px; margin-top: 20px "><a>Add Tour</a></button>
+        </div>
+      </div>
+
+   
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+class TourError(Exception):
+    pass

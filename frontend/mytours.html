@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Tours</title>
+
+    <link rel="stylesheet" href="/styles.css"/>    
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <script defer src="/mytours.js"></script>
+
+
+  </head>
+  <body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+          <span>
+          <a id="navbar__logo">Concrete Jungle Tours</a>
+  
+          <div class="subnav__content">
+           
+            <a href="/index.html#pois"  class="subnav__content">Stops</a>
+            <a href="/index.html#guides" class="subnav__content">Guides</a>
+          </div>
+        </span>
+       
+  
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__btn">
+              <a class="navbar__links" id="logout">Logout</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="/login.html" class="navbar__links" id="login">Login</a>
+    
+            </li>
+            <li class="navbar__btn">
+              <a href="/index.html" class="navbar__links" id="home">Home</a>
+    
+            </li>
+           
+            
+            <li class="navbar__btn">
+              <a href="/tours.html" class="navbar__links" id="alltours">All Tours</a>
+    
+            </li>
+            <li class="navbar__item">
+                <a href="/addTour.html" class="navbar__links" id="addtour">Add Tour</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+  
+    <!-- Hero Section -->
+    <div class="hero2" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading" style="margin-bottom: 100px"><span>Tours</span></h1>
+        <table id="reimbursement-table">
+          <thead>
+          <tr>      
+           
+            <th width="40%;">Popular Stops</th>
+            <th width="10%">Tour Name</th>
+            
+            <th width="10%">Day of the Week
+            </th>
+            <th width="10%">Cost Per Person</th>
+          </th>
+          <th width="30%">Action</th>
+          </th>
+        </tr>
+        </thead>
+        
+              <tbody id="tours">
+              </tbody>
+          </table>
+
+        
+     
+      </div>
+    </div>
+
+
+
+
+</body>
+</html>

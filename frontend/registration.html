@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">   
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <script defer src="registration.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <span>
+        <a id="navbar__logo">Concrete Jungle Tours</a>
+
+        <div class="subnav__content">
+          <a href="tours.html" class="subnav__content" hidden >Tours</a>
+          <a href="index.html#pois" class="subnav__content" hidden>Stops</a>
+          <a href="index.html#guides" class="subnav__content" hidden>Guides</a>
+        </div>
+      </span>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        
+        
+        <li class="navbar__btn">
+          <a href="index.html" class="navbar__links" id="home">Home</a>
+
+        </li>
+        <li class="navbar__item">
+            <a href="/login.html" class="navbar__links" id="login">Login</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading" style="margin-bottom: 100px; margin-top: 0px;"><span>Register </span>Now</h1>
+        <form>
+          <p id="login-error-message" style= "margin-bottom: 20px" class="label"></p>
+        <tbody>
+          <ul class="label" style= "margin-bottom: 20px">Email:   <span style="margin-left: 90px"><input class="input" type="email" placeholder="someone@domain.com" id="email-input"></span></ul>
+          <ul class="label" style= "margin-bottom: 20px">Password:   <span style="margin-left: 60px"><input class="input" type="password" placeholder="Password123!" id="password-input"></span></ul>
+          <ul class="label" style= "margin-bottom: 20px">First Name:   <span style="margin-left: 50px"><input class="input" type="text" placeholder="John" id="firstname-input"></span></ul>
+          <ul class="label" style= " margin-bottom: 20px">Last Name:   <span style="margin-left: 50px"><input class="input" type="text" placeholder="Doe" id="lastname-input"></span></ul>
+          <ul class="label" style=  "margin-bottom: 20px">Phone Number:   <span style="margin-left: 15px"><input class="input" type="text" placeholder="000-000-0000" id="phone-input"></span></ul>
+
+        </tbody>
+        <button id="register-submit-btn" class="form-button"><a> Register</a></button>
+        <!-- <span id="login-error-message"></span> -->
+
+      </form>
+      </div>
+    </div>
+
+    
+   
+</body>
+</html>
